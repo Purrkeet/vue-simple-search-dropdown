@@ -46,5 +46,8 @@
   },
   "dependencies": {
     "sass": "^1.94.2"
+  },
+  "peerDependencies": {
+    "vue": "^2.0.0"
   }
 }

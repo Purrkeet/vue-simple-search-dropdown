@@ -3,7 +3,10 @@
 > [!NOTE]
 > This project is a fork of [vue-simple-search-dropdown](https://github.com/romainsimon/vue-simple-search-dropdown) by Romain Simon. It includes additional features like keyboard navigation (arrows, tab, enter), improved selection handling, and bug fixes for empty input states.
 
-A Vue component for a simple searchable dropdown.
+> [!WARNING]
+> **Compatibility Note:** This component is designed for **Vue 2** only. It is **NOT** compatible with Vue 3.
+
+A Vue 2 component for a simple searchable dropdown.
 
 No external library is used in this dropdown.
 
