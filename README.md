@@ -9,12 +9,12 @@ No external library is used in this dropdown.
 
 ### Demo
 
-Demo here: [https://romainsimon.github.io/vue-simple-search-dropdown/](https://romainsimon.github.io/vue-simple-search-dropdown/)
+Demo here: [https://purrkeet.github.io/vue-simple-search-dropdown/](https://purrkeet.github.io/vue-simple-search-dropdown/)
 
 ## Installation
 
 ```js
-npm install vue-simple-search-dropdown
+npm install vue-simple-search-dropdown-enhanced
 ```
 
 ### Browser
@@ -32,7 +32,7 @@ Include the script file, then install the component with `Vue.use(Dropdown);` e.
 ### Module
 
 ```js
-import Dropdown from 'vue-simple-search-dropdown';
+import Dropdown from 'vue-simple-search-dropdown-enhanced';
 ```
 
 ## Usage

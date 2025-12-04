@@ -18,8 +18,12 @@
   ],
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/romainsimon/vue-simple-search-dropdown"
+    "url": "git+https://github.com/Purrkeet/vue-simple-search-dropdown.git"
   },
+  "bugs": {
+    "url": "https://github.com/Purrkeet/vue-simple-search-dropdown/issues"
+  },
+  "homepage": "https://github.com/Purrkeet/vue-simple-search-dropdown#readme",
   "devDependencies": {
     "babel-core": "^6.26.3",
     "babel-loader": "^7.1.4",
