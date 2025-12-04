@@ -7,17 +7,43 @@
   <style type="text/css">
     body {
       font-family: Arial, Helvetica, sans-serif;
-      line-height: 3em;
+      line-height: 1.5em;
+      padding: 40px;
+      background-color: #f9f9f9;
+    }
+
+    #app {
+      max-width: 600px;
+      margin: 0 auto;
+      background: white;
+      padding: 40px;
+      border-radius: 8px;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+      text-align: center;
     }
 
     h1 {
       font-weight: 100;
       font-size: 1.5em;
+      margin-bottom: 20px;
+      color: #333;
     }
 
     p {
-      font-size: .8em;
-      color: #ccc;
+      font-size: 1em;
+      color: #555;
+      margin: 10px 0;
+    }
+
+    a {
+      color: #42b983;
+      text-decoration: none;
+    }
+
+    /* Force left align for dropdown contents */
+    .dropdown-input,
+    .dropdown-item {
+      text-align: left;
     }
   </style>
 </head>
@@ -26,9 +52,11 @@
   <div id="app">
     <h1>Vue.js search dropdown component - example</h1>
     <p>Type "Unicorn" and press enter : </p>
-    <Dropdown :options="options" v-on:selected="validateSelection" v-on:filter="getDropdownValues" :disabled="false"
-      placeholder="Please select an animal">
-    </Dropdown>
+    <div style="display: flex; justify-content: center;">
+      <Dropdown :options="options" v-on:selected="validateSelection" v-on:filter="getDropdownValues" :disabled="false"
+        placeholder="Please select an animal">
+      </Dropdown>
+    </div>
     <p>Selected animal: {{ selected.name || 'none' }}</p>
     <br />
     <p>Please see documentation here: <a
