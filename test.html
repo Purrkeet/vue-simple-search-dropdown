@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dropdown Test</title>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.14/dist/vue.js"></script>
+    <script src="./dist/vue-simple-search-dropdown.min.js"></script>
+    <style>
+        body {
+            font-family: sans-serif;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 400px;
+            margin: 0 auto;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="app" class="container">
+        <h2>Dropdown Test</h2>
+        <p>Use Arrow keys, Enter, and Escape.</p>
+
+        <dropdown :options="options" :disabled="false" name="test-dropdown" placeholder="Select an item..."
+            @selected="onSelected" @filter="onFilter">
+        </dropdown>
+
+        <p>Selected: {{ selectedOption ? selectedOption.name : 'None' }}</p>
+    </div>
+
+    <script>
+        // The library exports 'Dropdown' to window because of libraryTarget: 'window'
+        // Check if it's directly the component or a plugin
+        console.log('Dropdown lib:', window.Dropdown);
+
+        // Based on src/plugin.js (which we haven't seen but usually installs the component),
+        // or we can just register it locally if it exports the component.
+        // Let's assume the window.Dropdown is the installable plugin or the component itself.
+
+        Vue.use(window.Dropdown);
+
+        new Vue({
+            el: '#app',
+            data: {
+                options: [
+                    { id: 1, name: 'Apple' },
+                    { id: 2, name: 'Banana' },
+                    { id: 3, name: 'Cherry' },
+                    { id: 4, name: 'Date' },
+                    { id: 5, name: '23 Elderberry' },
+                    { id: 6, name: '6 Fig' },
+                    { id: 7, name: 'Grape' }
+                ],
+                selectedOption: null
+            },
+            methods: {
+                onSelected(option) {
+                    console.log('Selected:', option);
+                    this.selectedOption = option;
+                },
+                onFilter(filter) {
+                    console.log('Filter:', filter);
+                }
+            }
+        });
+    </script>
+</body>
+
+</html>

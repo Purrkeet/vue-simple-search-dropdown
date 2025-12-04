@@ -1,0 +1,46 @@
+{
+  "name": "vue-simple-search-dropdown-enhanced",
+  "version": "1.0.4",
+  "description": "A Vue.js simple dropdown component with search (Enhanced with keyboard navigation)",
+  "main": "dist/vue-simple-search-dropdown.js",
+  "scripts": {
+    "build": "rimraf ./dist && webpack --config ./webpack.config.js"
+  },
+  "author": "Erik",
+  "contributors": [
+    "Romain Simon <contact@romainsimon.net> (Original Author)"
+  ],
+  "license": "MIT",
+  "keywords": [
+    "vue",
+    "vuejs",
+    "dropdown"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/romainsimon/vue-simple-search-dropdown"
+  },
+  "devDependencies": {
+    "babel-core": "^6.26.3",
+    "babel-loader": "^7.1.4",
+    "babel-plugin-transform-runtime": "^6.23.0",
+    "babel-preset-env": "^1.7.0",
+    "babel-preset-stage-2": "^6.24.1",
+    "babel-runtime": "^6.26.0",
+    "css-loader": "^4.3.0",
+    "rimraf": "^6.1.2",
+    "sass-loader": "^10.0.3",
+    "uglifyjs-webpack-plugin": "^2.2.0",
+    "vue": "^2.5.16",
+    "vue-html-loader": "^1.2.4",
+    "vue-loader": "^15.2.4",
+    "vue-style-loader": "^4.1.0",
+    "vue-template-compiler": "^2.7.14",
+    "webpack": "^4.11.1",
+    "webpack-cli": "^4.10.0",
+    "webpack-merge": "^4.1.2"
+  },
+  "dependencies": {
+    "sass": "^1.94.2"
+  }
+}
